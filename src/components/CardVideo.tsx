@@ -4,7 +4,7 @@ const CardVideo = ({ index }: { index: number }) => {
     const title = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, quam.'
 
     return (
-        <div className="w-8/12 sm:w-11/12 mx-auto hover:scale-105 duration-300">
+        <div className="w-8/12 sm:w-11/12 mx-auto hover:scale-105 duration-300 shadow-sm rounded">
             <img className="rounded-lg w-full h-36 object-cover" src={`https://source.unsplash.com/random/?tech/${index}}`} alt={`img - ${index}`} />
             <div className="flex mt-2 items-start gap-2">
                 <span className="block rounded-full p-1">
