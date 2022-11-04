@@ -15,8 +15,8 @@ type Props = {
 
 const Sidebar = ({ handleSidebar, isOpen }: Props) => {
   return (
-    <aside className={`z-10 flex-1 fixed xl:relative xl:block xl:w-fit inset-0 bg-black/20 ${isOpen ? 'block' : 'hidden'}`}>
-      <div className="w-60 bg-white">
+    <aside className={`z-10 flex-1 fixed xl:relative xl:translate-x-0 xl:w-fit inset-0 duration-700 ${isOpen ? 'translate-x-0' : '-translate-x-full'}`}>
+      <div className='w-60 bg-white' >
         <div className="xl:hidden flex items-center gap-5 py-3 px-6">
           <VscMenu onClick={handleSidebar} className="w-6 h-fit" />
           <div className="flex items-center">
@@ -156,7 +156,7 @@ const Sidebar = ({ handleSidebar, isOpen }: Props) => {
           </section>
         </div>
       </div>
-    </aside>
+    </aside >
   )
 }
 
