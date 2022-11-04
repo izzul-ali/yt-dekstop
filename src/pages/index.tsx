@@ -1,9 +1,8 @@
 import CardVideo from "../components/CardVideo"
 
-
 const Home = () => {
     const numArry = () => {
-        let nums: Array<number> = []
+        const nums: Array<number> = []
 
         for (let index = 1; index <= 100; index++) {
             nums.push(index)
