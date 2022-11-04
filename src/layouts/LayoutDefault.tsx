@@ -4,9 +4,9 @@ import { BsYoutube, BsFillMicFill, BsThreeDotsVertical } from 'react-icons/bs'
 import { CgProfile } from 'react-icons/cg'
 import { VscMenu } from 'react-icons/vsc'
 import { Outlet } from 'react-router-dom'
-import SimpleSidebar from '../components/SimpleSidebar'
 
 const Sidebar = lazy(() => import('../components/Sidebar'))
+const SimpleSidebar = lazy(() => import('../components/SimpleSidebar'))
 
 const LayoutDefault = () => {
     const [isOpen, setOpen] = useState(false)
