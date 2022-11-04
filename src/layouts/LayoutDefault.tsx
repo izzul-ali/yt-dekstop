@@ -26,7 +26,7 @@ const LayoutDefault = () => {
                     <VscMenu className="w-6 h-fit" onClick={handleSidebar} />
                     <div className="flex items-center">
                         <BsYoutube className='w-7 h-fit fill-red-600' aria-hidden={false} />
-                        <h1 className='text-xl font-bold font-serif'>YoutubeID</h1>
+                        <h1 className='text-lg sm:text-xl font-bold font-serif'>Youtube</h1>
                     </div>
 
                 </div>
@@ -39,9 +39,9 @@ const LayoutDefault = () => {
                     <BsFillMicFill className='w-4 h-fit' />
                     <BsThreeDotsVertical className='w-4 h-fit' />
 
-                    <div className="flex items-center gap-2 text-blue-600">
+                    <div className="flex items-center gap-1 text-blue-600">
                         <CgProfile className='w-5 h-fit' />
-                        <p>Sign in</p>
+                        <p className='text-sm'>Sign in</p>
                     </div>
                 </div>
             </header>
@@ -51,9 +51,9 @@ const LayoutDefault = () => {
                 <SimpleSidebar />
 
                 <div className="w-full pb-32 h-screen overflow-hidden">
-                    <div className="mt-3 w-full overflow-x-scroll text-xs sm:text-sm flex gap-x-10 py-2 px-6 items-center mb-5 category-scroll">
+                    <div className="w-full overflow-x-scroll text-xs sm:text-sm flex gap-x-10 py-2 px-6 items-center my-5 category-scroll">
                         {
-                            menu.map((v, i) => (<p className={`px-2 py-1 ${i === 0 ? 'bg-black/90 text-white' : 'bg-black/10'} rounded whitespace-nowrap`} key={v}>{v}</p>))
+                            menu.map((v, i) => (<p className={`px-2 py-1 ${i === 0 ? 'bg-black/90 text-white' : 'bg-black/5'} rounded whitespace-nowrap`} key={v}>{v}</p>))
                         }
                     </div>
 
